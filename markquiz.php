@@ -31,7 +31,7 @@
  	);
 
  	if (!$conn) {
- 		echo "<p>Database connection failed</p>";
+ 		echo "<p>Cannot connect to the database. Please check your connection.</p>";
  	} else {
 
  		$sql_table = "attempts";
