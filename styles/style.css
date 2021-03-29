@@ -1,0 +1,249 @@
+/*	
+	filename:assign1_style.css
+	author: Minh Nguyen
+	created: August 14, 2020
+	last modified: August , 2020
+	description: assign1
+*/
+* {font-family: calabri light, sans-serif;}
+* {color: #2F4F4F; text-align: justify;}
+html {
+    scroll-behavior: smooth;
+}
+body {     
+    background-image: url(images/Background1.jpg);
+    z-index: -2;
+    background-attachment: fixed;
+}
+.fieldset {
+    line-height: 1.6em;
+    z-index: -1;
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    padding: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 8px #969090, 
+    -2px 2px 8px #969090, 
+    2px -2px 8px #969090, 
+    -2px -2px 8px #969090;
+}
+
+/*This is for header*/
+header {
+    background-color: #333;
+    padding: 0px 10px;
+   	position: sticky;
+    top: 0;
+    z-index: 2;
+}
+nav, h1 {
+    display: inline-block;
+}
+header nav {float: right;}
+
+h1 {
+    font-family: Bahnschrift SemiBold, sans-serif;
+    color: white;
+    margin: 5px 0;
+    padding: 0;
+}
+.title {
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+}
+
+.right {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+
+nav .navbar>li {
+    display: inline-block;
+}
+
+nav a {
+    font-size: 1.1em;
+    margin: 0;
+    text-align: left;
+    padding: 14px 25px 14px 25px;
+    background: #333;
+    color:white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+nav li:hover>a {
+    background: green;
+    cursor: pointer;
+}
+nav .subnavbar, nav .subnavbar2 {
+    position: absolute;
+    border: 1px solid black;
+    display: none;
+}
+
+nav .subnavbar a, nav .subnavbar2 a {
+    background-color: #f9f9f9;
+    color:black;
+}
+.subnavbar li:hover>a, .subnavbar2 li:hover>a {
+    background-color: lightgray;
+}
+nav .navbar>li:hover .subnavbar, nav .subnavbar>li:hover .subnavbar2 {
+    display: block;
+}
+nav .subnavbar2 {
+    top:0;
+    right:0;
+    transform: translate(100%,0);
+}
+nav .subnavbar li {position: relative;}
+
+/*This is for footer*/
+footer {
+    text-align: center;
+    text-decoration: none;
+    background-color: #333;
+    font-family: Bahnschrift SemiBold;
+    bottom:0;
+}
+footer a {
+    color: white; 
+    font-weight: bold;
+    font-size: 0.75em;
+}
+
+
+/*This is for topic.html and quiz.html*/
+article {
+    min-width: 30%;
+}
+.disc {
+    list-style-type: disc;
+}
+.orange {
+    font-weight: bold;
+    color: orange;
+}
+.darkred, .hidden {
+    font-weight: bold;
+    color: darkred;
+}
+.darkblue {
+    font-weight: bold;
+    color: darkblue;
+}
+.resize {
+    max-width: 40%;
+}
+#square {
+    list-style-type: square;
+}
+
+/*This is for images*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#blur {
+    filter: blur(5px);
+    z-index: -1;
+}
+#image-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+} 
+section#image-text h2, section#image-text p{
+    color: white;
+    font-family: Bahnschrift SemiBold, sans-serif;
+}
+/*This is for aside*/
+aside {
+    float: right;
+    width: 25%;
+    margin-left: 15px;
+    border-style: dashed;
+    border-color: black;
+    padding: 5px;
+    background-color: #CFABAB;
+}
+
+/*This is for table*/
+#table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table, td, th{
+    border: 1px solid;
+    padding: 10px;
+}
+tr:nth-child(even) {background-color: lightgray;}
+th {
+    background-color: green;
+    color: black;
+    font-size: 1.2em;
+    text-align: center;
+}
+/*This is for enhancements.html*/
+.source {
+    text-decoration: none;
+}
+
+/*This is for present button*/
+button#present {
+    font-size: 1.1em;
+    margin: 0 auto;
+    text-align: left;
+    padding: 14px 25px 14px 25px;
+    background: #333;
+    color:white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    font-family: Bahnschrift SemiBold, sans-serif;
+}
+
+button.retry, button.query {
+    font-size: 1.1em;
+    margin: 0 auto;
+    text-align: left;
+    padding: 14px 20px 14px 20px;
+    background: #333;
+}
+
+button a, button.query {
+    color: white;
+    text-decoration: none;
+    font-family: Bahnschrift SemiBold, sans-serif;
+}
+
+button.query {
+    float: center;
+    display: flex;
+    justify-content: space-between;
+    display: inline-block;
+}
+div.inline form {
+    display: inline-block;
+}
